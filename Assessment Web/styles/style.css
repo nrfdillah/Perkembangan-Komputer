@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #c9501c;
+}
+
+header {
+  display: inline;
+}
+
+.Judul {
+  text-align: center;
+  background-color: #c9501c;
+  color: #ffffff;
+  padding: 40px;
+}
+
+nav {
+  padding: 3px;
+  background-color: #a64014;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+main p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.content-header {
+  margin: 0 auto;
+}
+
+#content {
+  margin: 0 auto;
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.picture {
+  width: 50%;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+aside {
+  flex: 2.5;
+}
+
+.Charles {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.Charles img {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Charles h3 {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+  padding-right: 10px;
+}
+
+footer {
+  padding: 5px;
+  color: #ffffff;
+  background-color: #c9501c;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav,
+  main {
+    padding: 10px;
+  }
+
+  nav ul {
+    padding-inline: 1rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  main {
+    flex-flow: column nowrap;
+  }
+
+  #content,
+  .card {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
